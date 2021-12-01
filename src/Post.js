@@ -3,16 +3,15 @@ import React from 'react';
 
 const Post = function ({ author, body }) {
   return (
-    <>
-      <div>
-        Author:
+    <div className="Post">
+      <div className="Author">
         {author}
       </div>
-      <div>
-        Body:
+      <div className="Postbody">
         {body}
       </div>
-    </>
+      <hr />
+    </div>
   );
 };
 

@@ -1,10 +1,130 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+hr {
+  width:100%;
+}
+
+.App {
+  position: absolute;
+  height: 2462px;
+  left: 284px;
+  right: 285px;
+  top: 116px;
+
+  background: #FFFFFF;
+  mix-blend-mode: normal;
+}
+
+.Title {
+  position: absolute;
+  width: 60px;
+  height: 22px;
+  left: 32px;
+  top: 24px;
+  z-index: 1;
+}
+
+.Tweet {
+  position: absolute;
+  height: 142px;
+  left: 1px;
+  right: 1px;
+  top: 88px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 10px 0px #E7ECF0, inset 0px 1px 0px rgba(0, 0, 0, 0.08);
+}
+
+.Posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+
+  position: absolute;
+  height: 1854px;
+  left: 83.5px;
+  right: 83.5px;
+  top: 268px;
+
+  background: #FFFFFF;
+}
+
+.Post {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: static;
+  width: 630px;
+  height: 40px;
+  left: 0px;
+  top: 1450px;
+
+  background: #FFFFFF;
+  border-radius: 40px;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 4;
+  flex-grow: 0;
+  margin: 16px 0px;
+}
+
+.Printbutton {
+  position: absolute;
+  width: 89px;
+  height: 42px;
+  left: 675px;
+  top: 78px;
+}
+
+.Author {
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+
+  width: 108px;
+  height: 18px;
+}
+
+.Postbody {
+  position: static;
+  width: 574px;
+  height: 44px;
+  left: 56px;
+  top: 24px;
+  
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  /* or 147% */
+  
+  
+  /* Gray 1 */
+  
+  color: #333333;
+  
+  
+  /* Inside Auto Layout */
+  
+  flex: none;
+  order: 1;
+  align-self: flex-end;
+  flex-grow: 0;
+  margin: 5px 0px;
 }
 
 code {
